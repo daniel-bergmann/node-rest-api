@@ -1,0 +1,23 @@
+GET  http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/6000404a40872e39a8a5dd61
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Burger",
+    "subscribedToChannel": "burger and fires"
+}
+
+###
+DELETE http://localhost:3000/subscribers/6000485001c71c7ad03d94fa
+
+###
+PATCH http://localhost:3000/subscribers/6000404a40872e39a8a5dd61
+Content-Type: application/json
+
+{
+    "name": "New Name" 
+}
